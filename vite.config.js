@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
-    
   ],
-  base: '/neil-pagara/',
+  base: 'https://neilpagsss14.github.io/neil-pagara/',
 })
