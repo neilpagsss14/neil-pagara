@@ -159,7 +159,7 @@ export const resume = {
   ],
   experience: [
     {
-      company: "Agnos GmbH (Remote) - Part-Time",
+      company: "Agnos GmbH (Remote) - Part Time",
       role: "Software Engineer",
       dateRange: "Dec 2025 - Present",
       highlights: [
@@ -170,7 +170,7 @@ export const resume = {
       ],
     },
     {
-      company: "EduQuest Inc - Full-Time",
+      company: "EduQuest Inc - Full Time",
       role: "Product and Development Officer",
       dateRange: "Feb 2025 - Present",
       highlights: [
@@ -191,7 +191,7 @@ export const resume = {
       ],
     },
     {
-      company: "Freelancer - Part-Time",
+      company: "Freelancer - Part Time",
       role: "Flutter Developer",
       dateRange: "Jan 2023 - Present",
       highlights: [
