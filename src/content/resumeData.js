@@ -159,7 +159,7 @@ export const resume = {
   ],
   experience: [
     {
-      company: "Agnos GmbH (Switzerland)",
+      company: "Agnos GmbH (Remote) - Part-Time",
       role: "Software Engineer",
       dateRange: "Dec 2025 - Present",
       highlights: [
@@ -170,7 +170,7 @@ export const resume = {
       ],
     },
     {
-      company: "EduQuest Inc",
+      company: "EduQuest Inc - Full-Time",
       role: "Product and Development Officer",
       dateRange: "Feb 2025 - Present",
       highlights: [
@@ -181,8 +181,8 @@ export const resume = {
       ],
     },
     {
-      company: "Fligno Software Philippines, Inc",
-      role: "On the Job Training Software Developer",
+      company: "Fligno Software Philippines, Inc - On the Job Training",
+      role: "Software Developer",
       dateRange: "Feb 2024 - Apr 2024",
       highlights: [
         "Contributed to development of web applications through coding, testing, and troubleshooting for improved stability.",
@@ -191,7 +191,7 @@ export const resume = {
       ],
     },
     {
-      company: "Freelancer",
+      company: "Freelancer - Part-Time",
       role: "Flutter Developer",
       dateRange: "Jan 2023 - Present",
       highlights: [
