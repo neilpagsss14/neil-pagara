@@ -62,7 +62,7 @@ export default function App() {
             <div className="mt-7 flex flex-wrap gap-3">
               {[
                 ['about', 'About'],
-                ['skills', 'Skills'],
+                ['skills', 'Tech Stack'],
                 ['projects', 'Projects'],
                 ['journey', 'Journey'],
                 ['experience', 'Experience'],
@@ -90,7 +90,7 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="skills" title="Skills">
+        <Section id="skills" title="Tech Stack">
           <TechGrid categories={resume.skills.categories} />
         </Section>
 

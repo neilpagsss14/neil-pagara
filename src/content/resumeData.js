@@ -15,17 +15,18 @@ export const resume = {
     categories: [
       {
         name: "Frontend",
-        items: ["HTML", "CSS", "React", "Tailwind"],
+        items: ["React", "Vue", "Angular", "Tailwind", "JavaScript", "TypeScript", "Next.js", "Flutter"],
       },
       {
         name: "Mobile",
-        items: ["Flutter", "Mobile App Development", "Kotobee Author"],
+        items: ["Flutter"],
       },
       {
         name: "Backend & Services",
         items: [
           "Firebase",
           "Firestore",
+          "Node.js",
           "GPS Integration",
           "Stripe",
           "SMS Notifications",
@@ -34,7 +35,6 @@ export const resume = {
       {
         name: "Product & Collaboration",
         items: [
-          "LMS Feature Development",
           "UI / UX Design",
           "Team Collaboration",
           "Problem Solving",
@@ -106,8 +106,16 @@ export const resume = {
       keyTech: [
         "React",
         "Tailwind",
-        "LMS features",
-        "Multilingual UI (English and Tagalog)",
+      ],
+    },
+    {
+      title: "SIMUL",
+      description: "A multi-role transportation and mobility platform with real-time tracking and booking features.",
+      keyTech: [
+        "Flutter",
+        "Firebase",
+        "Google Maps API",
+        "Stripe",
       ],
     },
   ],
@@ -173,16 +181,6 @@ export const resume = {
       ],
     },
     {
-      company: "Freelancer",
-      role: "Flutter Developer",
-      dateRange: "Jan 2023 - Present",
-      highlights: [
-        "Designed and developed responsive mobile applications tailored to client needs across devices and platforms.",
-        "Delivered full-cycle development (front-end and back-end) and reduced downtime through iterative improvements.",
-        "Optimized performance, accessibility, and usability to improve user experience and adoption.",
-      ],
-    },
-    {
       company: "Fligno Software Philippines, Inc",
       role: "On the Job Training Software Developer",
       dateRange: "Feb 2024 - Apr 2024",
@@ -190,6 +188,16 @@ export const resume = {
         "Contributed to development of web applications through coding, testing, and troubleshooting for improved stability.",
         "Collaborated with the development team to enhance features and optimize application performance.",
         "Improved overall application quality by participating in debugging and feature enhancement support.",
+      ],
+    },
+    {
+      company: "Freelancer",
+      role: "Flutter Developer",
+      dateRange: "Jan 2023 - Present",
+      highlights: [
+        "Designed and developed responsive mobile applications tailored to client needs across devices and platforms.",
+        "Delivered full-cycle development (front-end and back-end) and reduced downtime through iterative improvements.",
+        "Optimized performance, accessibility, and usability to improve user experience and adoption.",
       ],
     },
   ],
