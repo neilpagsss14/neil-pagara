@@ -30,6 +30,10 @@ export const resume = {
           "GPS Integration",
           "Stripe",
           "SMS Notifications",
+          "Arduino",
+          "Raspberry Pi",
+          "ESP32",
+          "ESP8266",
         ],
       },
       {
@@ -154,7 +158,7 @@ export const resume = {
     {
       year: "2025 - Present",
       title: "Software Engineer",
-      subtitle: "Agnos GmbH (Switzerland)",
+      subtitle: "Agnos GmbH (Remote)",
       type: "role",
     },
   ],

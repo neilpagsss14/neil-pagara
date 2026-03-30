@@ -18,7 +18,7 @@ const resumeDocuments = import.meta.glob('./assets/documents/*.{pdf,doc,docx}', 
 const profileImagesList = Object.entries(profileImages)
 const mainImageEntry = profileImagesList.find(([path]) => !path.includes('hover'))
 const profileImageSrc = mainImageEntry ? mainImageEntry[1] : null
-const hoverImageEntry = profileImagesList.find(([path]) => path.includes('hover-photo.png'))
+const hoverImageEntry = profileImagesList.find(([path]) => path.includes('hover-photo2-comp.png'))
 const hoverImageSrc = hoverImageEntry ? hoverImageEntry[1] : null
 
 const resumeFileSrc = Object.values(resumeDocuments)[0] ?? resume.contact.resumeDownloadUrl
@@ -70,17 +70,17 @@ export default function App() {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-4 sm:gap-6">
                 {profileImageSrc ? (
-                  <div className="relative group h-32 w-32 sm:h-40 sm:w-40 shrink-0">
+                  <div className="relative h-32 w-32 sm:h-40 sm:w-40 shrink-0">
                     <img
                       src={profileImageSrc}
                       alt={`${resume.hero.name} portrait`}
-                      className={`h-full w-full rounded-md border border-black object-cover dark:border-neutral-200 transition-opacity duration-300 ${hoverImageSrc ? 'group-hover:opacity-0 absolute inset-0' : ''}`}
+                      className={`h-full w-full rounded-md border border-black object-cover dark:border-neutral-200 transition-opacity duration-300 ${hoverImageSrc ? 'dark:opacity-0 absolute inset-0' : ''}`}
                     />
                     {hoverImageSrc && (
                       <img
                         src={hoverImageSrc}
-                        alt={`${resume.hero.name} hover portrait`}
-                        className="absolute inset-0 h-full w-full rounded-md border border-black object-cover dark:border-neutral-200 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                        alt={`${resume.hero.name} dark mode portrait`}
+                        className="absolute inset-0 h-full w-full rounded-md border border-black object-cover dark:border-neutral-200 opacity-0 transition-opacity duration-300 dark:opacity-100"
                       />
                     )}
                   </div>
