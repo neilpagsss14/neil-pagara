@@ -70,7 +70,7 @@ export default function App() {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-4 sm:gap-6">
                 {profileImageSrc ? (
-                  <div className="relative group h-35 w-35 sm:h-40 sm:w-40 shrink-0">
+                  <div className="relative group h-32 w-32 sm:h-40 sm:w-40 shrink-0">
                     <img
                       src={profileImageSrc}
                       alt={`${resume.hero.name} portrait`}
@@ -85,7 +85,7 @@ export default function App() {
                     )}
                   </div>
                 ) : (
-                  <div className="flex h-20 w-20 items-center justify-center rounded-md border border-black bg-black text-2xl font-semibold text-white sm:h-28 sm:w-28 dark:border-white dark:bg-white dark:text-black">
+                  <div className="flex h-32 w-32 items-center justify-center rounded-md border border-black bg-black text-3xl font-semibold text-white sm:h-40 sm:w-40 dark:border-white dark:bg-white dark:text-black">
                     NP
                   </div>
                 )}
