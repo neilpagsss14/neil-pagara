@@ -11,9 +11,13 @@ html {
   outline-offset: 2px;
 }
 
+*, *::before, *::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, fill 0.3s ease, box-shadow 0.3s ease;
+}
+
 body {
   margin: 0;
-  background: #fff;
+  background: #fafafe; /* Tailwind neutral-50 approximation */
   color: #000;
   font-family:
     "Sora",
@@ -28,6 +32,12 @@ body {
     "Segoe UI Emoji";
   line-height: 1.6;
 }
+
+html.dark body {
+  background: #0a0a0a; /* Tailwind neutral-950 */
+  color: #fafafa;
+}
+
 
 a {
   color: inherit;

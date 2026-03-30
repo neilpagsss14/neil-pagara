@@ -3,16 +3,16 @@ export default function Section({ id, title, withBorder = true, children }) {
     <section
       id={id}
       className={[
-        withBorder ? 'border-t border-black/80' : '',
+        withBorder ? 'border-t border-black/80 dark:border-neutral-700' : '',
         'scroll-mt-24 py-12 sm:py-16',
       ].join(' ')}
     >
       <div className="flex flex-col gap-8">
         <div className="max-w-2xl">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
             Section
           </p>
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl dark:text-white">
             {title}
           </h2>
         </div>
@@ -21,4 +21,3 @@ export default function Section({ id, title, withBorder = true, children }) {
     </section>
   );
 }
-

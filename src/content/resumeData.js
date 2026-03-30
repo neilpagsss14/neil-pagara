@@ -8,7 +8,7 @@ export const resume = {
   about: {
     paragraphs: [
       "I build clean, reliable mobile and web experiences with a strong focus on performance, accessibility, and maintainable code.",
-      "My work spans UI/UX design, full-cycle development, and real-world troubleshooting across the software development lifecycle.",
+      "My work spans Mobile App Development, Web Development, UI/UX design, full-cycle system development, and real-world troubleshooting across the software development lifecycle.",
     ],
   },
   skills: {
@@ -35,6 +35,7 @@ export const resume = {
       {
         name: "Product & Collaboration",
         items: [
+          "Git / GitHub",
           "UI / UX Design",
           "Team Collaboration",
           "Problem Solving",
