@@ -26,8 +26,11 @@ const resumeFileSrc = Object.values(resumeDocuments)[0] ?? resume.contact.resume
 export default function App() {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      const savedTheme = localStorage.getItem('theme')
+      if (savedTheme) {
+        return savedTheme === 'dark'
+      }
+      return false
     }
     return false
   })
@@ -101,10 +104,11 @@ export default function App() {
 
               <a
                 href={resumeFileSrc}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 sm:mt-0 inline-flex items-center justify-center border border-black px-4 py-2.5 text-sm font-medium transition hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black shadow-[4px_4px_0_0_#000] dark:shadow-[4px_4px_0_0_#fff] hover:translate-y-1 hover:shadow-none dark:hover:shadow-none bg-white dark:bg-neutral-900"
               >
-                Download Resume
+                View Resume
               </a>
             </div>
 

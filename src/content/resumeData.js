@@ -166,7 +166,7 @@ export const resume = {
     {
       company: "Agnos GmbH (Remote) - Part Time",
       role: "Software Engineer",
-      dateRange: "Dec 2025 - Present",
+      dateRange: "Dec 2025 - October 2026",
       highlights: [
         "Designed, developed, and deployed scalable web and mobile applications based on client specifications.",
         "Implemented new features, system enhancements, and third-party integrations to improve functionality.",
@@ -176,8 +176,8 @@ export const resume = {
     },
     {
       company: "EduQuest Inc - Full Time",
-      role: "Product and Development Officer",
-      dateRange: "Feb 2025 - Present",
+      role: "Product and Development Officer - Customer Success Representative",
+      dateRange: "Feb 2025 - September 2026",
       highlights: [
         "Designed and implemented intuitive LMS features to improve ease of use for teachers and learners.",
         "Provided technical assistance and training that improved LMS adoption and reduced support requests.",

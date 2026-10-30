@@ -1,4 +1,11 @@
 import { useMemo } from 'react'
+import { resume } from '../content/resumeData.js'
+
+const resumeDocuments = import.meta.glob('../assets/documents/*.{pdf,doc,docx}', {
+  eager: true,
+  import: 'default',
+})
+const resumeFileSrc = Object.values(resumeDocuments)[0] ?? resume.contact.resumeDownloadUrl
 
 const navItems = [
   { id: 'hero', label: 'Hero' },
@@ -50,11 +57,12 @@ export default function TopNav() {
 
           <div className="hidden items-center gap-3 sm:flex">
             <a
-              href={downloadHref}
+              href={resumeFileSrc}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center border border-black px-3 py-2 text-sm font-medium hover:bg-black hover:text-white"
-              download
             >
-              Download Resume
+              View Resume
             </a>
           </div>
         </div>
@@ -76,11 +84,12 @@ export default function TopNav() {
             </div>
           </div>
           <a
-            href={downloadHref}
+            href={resumeFileSrc}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden shrink-0 border border-black px-3 py-1.5 text-xs font-medium hover:bg-black hover:text-white sm:inline-flex"
-            download
           >
-            Resume
+            View Resume
           </a>
         </div>
       </div>
